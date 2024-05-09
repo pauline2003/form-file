@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Input Types and Attributes</title>
+<style>
+  body {
+    background-color: #FFD700; /* Bright yellow background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+  }
+  input, select, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<form action="#" method="post">
+  <label for="text-input">Text Input:</label>
+  <input type="text" id="text-input" name="text_input" placeholder="Enter text here" minlength="3" maxlength="10" pattern="[A-Za-z]{3,10}" required>
+  
+  <label for="email-input">Email Input:</label>
+  <input type="email" id="email-input" name="email_input" placeholder="Enter email" required>
+
+  <label for="password-input">Password Input:</label>
+  <input type="password" id="password-input" name="password_input" placeholder="Enter password" minlength="6" required>
+
+  <label for="number-input">Number Input:</label>
+  <input type="number" id="number-input" name="number_input" min="0" max="100" step="1" required>
+
+  <label for="date-input">Date Input:</label>
+  <input type="date" id="date-input" name="date_input" required>
+
+  <label for="checkbox-input">Checkbox Input:</label>
+  <input type="checkbox" id="checkbox-input" name="checkbox_input">
+
+  <label for="radio-input1">Radio Input 1:</label>
+  <input type="radio" id="radio-input1" name="radio_input" value="option1" checked>
+  <label for="radio-input2">Radio Input 2:</label>
+  <input type="radio" id="radio-input2" name="radio_input" value="option2">
+
+  <label for="select-input">Select Input:</label>
+  <select id="select-input" name="select_input" required>
+    <option value="">Select an option</option>
+    <option value="option1">Option 1</option>
+    <option value="option2">Option 2</option>
+    <option value="option3">Option 3</option>
+  </select>
+
+  <label for="textarea-input">Textarea Input:</label>
+  <textarea id="textarea-input" name="textarea_input" placeholder="Enter text here" rows="4" cols="50" minlength="10" maxlength="100" required></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
